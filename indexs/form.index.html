@@ -15,34 +15,42 @@
     <h5>Dados Pessoais</h5>
     <form action="#" method="post">
         <fieldset>
-            <label for="iname">*Nome Completo:</label>
+
+            <img src="../imagens/La Dame Logo.svg" alt="Logo La Dame Femme" >
+
+            <hr>
+
+            <label for="iname">Nome Completo:*</label>
             <input type="text" name="text" id="iname" required placeholder="Digite seu Nome Completo...">
 
-            <label for="iData de Nascimento">Data de Nascimento:</label>
+            <label for="iData de Nascimento">Data de Nascimento (opcional):</label>
             <input type="date" name="date" id="idate">
 
-            <label for="iCPF">CPF:</label>
+            <label for="iCPF">CPF:*</label>
             <input type="text" name="cpf" id="icpf" pattern="" maxlength="11" required placeholder="xxx-xxx-xxx-xx">
 
-            <label for="itel">Telefone Celular:</label>
-            <input type="tel" name="tel" id="item" placeholder="(##) ####-####">
+            <label for="itel">Telefone Celular:*</label>
+            <input type="tel" name="tel" id="item" placeholder="(##) #### - ####" required>
 
-            <label for="iemail">E-mail:</label>
-            <input type="email" name="Email" id="iemail" required>
+            <label for="itelfixo">Telefone Fixo (opcional):</label>
+            <input type="tel" name="tel" id="itelfixo" placeholder="(##) #### - ####">
+
+            <label for="iemail">E-mail:*</label>
+            <input type="email" name="Email" id="iemail" required placeholder="Digite seu e-mail...">
             
-            <label for="iemail">*Digite novamente:</label>
-            <input type="email" name="email" id="iemail" required>
+            <label for="iemail">Digite novamente:*</label>
+            <input type="email" name="email" id="iemail" required placeholder="Digite novamente seu e-mail...">
 
             <div class="checkbox">
                 <input type="checkbox" name="receber" id="icheck">
                 <label for="icheck">Desejo receber e-mails promocionais</label>
             </div>
 
-            <label for="ipassword">*Crie sua <strong>Senha de acesso:</strong></label>
-            <input type="password" name="password" id="ipassword" minlength="8" required>
+            <label for="ipassword">Crie sua <strong>Senha de acesso:</strong>*</label>
+            <input type="password" name="password" id="ipassword" minlength="8" required placeholder="Digite uma senha...">
 
-            <label for="ipassword">Digite novamente:</label>
-            <input type="password" name="password" id="ipassword" required>
+            <label for="ipassword">Digite novamente:*</label>
+            <input type="password" name="password" id="ipassword" required placeholder="Digite novamente a senha...">
         </fieldset>
 
         <div>
