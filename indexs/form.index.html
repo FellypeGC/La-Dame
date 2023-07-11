@@ -16,7 +16,7 @@
     <form action="#" method="post">
         <fieldset>
 
-            <img src="../imagens/La Dame Logo.svg" alt="Logo La Dame Femme" >
+            <img src="../imagens/La Dame Logo.svg" alt="Logo La Dame Femme">
 
             <hr>
 
@@ -41,21 +41,29 @@
             <label for="iemail">Digite novamente:*</label>
             <input type="email" name="email" id="iemail" required placeholder="Digite novamente seu e-mail...">
 
-            <div class="checkbox">
-                <input type="checkbox" name="receber" id="icheck">
-                <label for="icheck">Desejo receber e-mails promocionais</label>
-            </div>
-
             <label for="ipassword">Crie sua <strong>Senha de acesso:</strong>*</label>
             <input type="password" name="password" id="ipassword" minlength="8" required placeholder="Digite uma senha...">
 
             <label for="ipassword">Digite novamente:*</label>
             <input type="password" name="password" id="ipassword" required placeholder="Digite novamente a senha...">
+
+            <div class="checkbox">
+                <div>
+                    <input type="checkbox" name="receber" id="icheck">
+                    <label for="icheck">Desejo receber <br>e-mails promocionais</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="termo" id="icheck" required>
+                    <label for="icheck">Declaro que li e concordo com<br> os <span>termos de <a href="#">Política</a> e <a href="#">Privacidade</a></span>*</label>
+                </div>
+            </div>
+
+            <div>
+                <input type="submit" value="Avançar" id="avanco">
+            </div>
         </fieldset>
 
-        <div>
-            <input type="submit" value="Avançar" id="avanco">
-        </div>
+        
     </form>
 </body>
 </html>

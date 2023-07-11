@@ -56,7 +56,8 @@ fieldset {
 }
 
 img {
-    width: 300px;
+    width: 500px;
+    height: 169px;
 }
 
 label, input {
@@ -79,12 +80,25 @@ input:focus {
     outline: 0;
 }
 
+.checkbox {
+    display: flex;
+    justify-content: center;
+}
+
 div {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
 }
 
+span {
+    color: var(--cor-primaria);
+    font-weight: bold;
+}
+
+a {
+    color: var(--cor-primaria);
+}
 
 #icheck {
     font-size: 13px;
@@ -97,6 +111,7 @@ div {
     background-color: var(--cor-primaria);
     color: var(--cor-letra-botao);
     transition: 300ms ease-in-out;
+    cursor: pointer;
 }
 
 #avanco:hover {
