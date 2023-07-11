@@ -7,65 +7,72 @@
 
     <link rel="shortcut icon" href="../imagens/La Dame Logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="../styles/form.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
 
-    <h1>Cadastro de novo cliente</h1>
+    <header>
+        <a href="#" class="back-home"><img src="../imagens/LaDameSemFundo-removebg-preview.svg" alt="Voltar para Home"></a>
+        <menu>
+            <ul>
+                <li><a href="#" class="h-link">Minha Conta</a></li>
+                <li><a href="#" class="h-link">Entrar</a></li>
+                <li><a href="#" class="h-link">Sair</a></li>
+                <li>
+                    <a href="#" class="h-link">
+                        <span class="material-symbols-outlined">
+                            shopping_cart
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </menu>
+    </header>
 
-    <h5>Dados Pessoais</h5>
-    <form action="#" method="post">
-        <fieldset>
-
-            <div class="logo">
-                <img src="../imagens/La Dame Logo.svg" alt="Logo La Dame Femme">
-            </div>
-
-            <hr>
-
-            <label for="iname">Nome Completo:*</label>
-            <input type="text" name="text" id="iname" required placeholder="Digite seu Nome Completo...">
-
-            <label for="iData de Nascimento">Data de Nascimento (opcional):</label>
-            <input type="date" name="date" id="idate">
-
-            <label for="iCPF">CPF:*</label>
-            <input type="text" name="cpf" id="icpf" pattern="" maxlength="14" required placeholder="xxx-xxx-xxx-xx">
-
-            <label for="itel">Telefone Celular:*</label>
-            <input type="tel" name="tel" id="item" placeholder="(##) #### - ####" required>
-
-            <label for="itelfixo">Telefone Fixo (opcional):</label>
-            <input type="tel" name="tel" id="itelfixo" placeholder="(##) #### - ####">
-
-            <label for="iemail">E-mail:*</label>
-            <input type="email" name="Email" id="iemail" required placeholder="Digite seu e-mail...">
-            
-            <label for="iemail">Digite novamente:*</label>
-            <input type="email" name="email" id="iemail" required placeholder="Digite novamente seu e-mail...">
-
-            <label for="ipassword">Crie sua <strong>Senha de acesso:</strong>*</label>
-            <input type="password" name="password" id="ipassword" minlength="8" required placeholder="Digite uma senha...">
-
-            <label for="ipassword">Digite novamente:*</label>
-            <input type="password" name="password" id="ipassword" required placeholder="Digite novamente a senha...">
-
-            <div class="checkbox">
-                <div>
-                    <input type="checkbox" name="receber" id="icheck">
-                    <label for="icheck">Desejo receber <br>e-mails promocionais</label>
+    <main>
+        <h1>Cadastro de novo cliente</h1>
+        <h5>Dados Pessoais</h5>
+        <form action="#" method="post">
+            <fieldset>
+                <div class="logo">
+                    <img src="../imagens/La Dame Logo.svg" alt="Logo La Dame Femme">
                 </div>
-                <div>
-                    <input type="checkbox" name="termo" id="icheck" required>
-                    <label for="icheck">Declaro que li e concordo com<br> os <span>termos de <a href="#">Política</a> e <a href="#">Privacidade</a></span>*</label>
-                </div>
-            </div>
-
-            <div>
-                <input type="submit" value="Avançar" id="avanco">
-            </div>
-        </fieldset>
-
+                <hr>
+                <label for="iname">Nome Completo:*</label>
+                <input type="text" name="text" id="iname" required placeholder="Digite seu Nome Completo...">
+                <label for="iData de Nascimento">Data de Nascimento (opcional):</label>
+                <input type="date" name="date" id="idate">
+                <label for="iCPF">CPF:*</label>
+                <input type="text" name="cpf" id="icpf" pattern="" maxlength="14" required placeholder="xxx-xxx-xxx-xx">
+                <label for="itel">Telefone Celular:*</label>
+                <input type="tel" name="tel" id="item" placeholder="(##) #### - ####" required>
+                <label for="itelfixo">Telefone Fixo (opcional):</label>
+                <input type="tel" name="tel" id="itelfixo" placeholder="(##) #### - ####">
+                <label for="iemail">E-mail:*</label>
+                <input type="email" name="Email" id="iemail" required placeholder="Digite seu e-mail...">
         
-    </form>
+                <label for="iemail">Digite novamente:*</label>
+                <input type="email" name="email" id="iemail" required placeholder="Digite novamente seu e-mail...">
+                <label for="ipassword">Crie sua <strong>Senha de acesso:</strong>*</label>
+                <input type="password" name="password" id="ipassword" minlength="8" required placeholder="Digite uma senha...">
+                <label for="ipassword">Digite novamente:*</label>
+                <input type="password" name="password" id="ipassword" required placeholder="Digite novamente a senha...">
+                <div class="checkbox">
+                    <div>
+                        <input type="checkbox" name="receber" id="icheck">
+                        <label for="icheck">Desejo receber <br>e-mails promocionais</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="termo" id="icheck" required>
+                        <label for="icheck">Declaro que li e concordo com<br> os <span>termos de <a href="#">Política</a> e <a href="#">Privacidade</a></span>*</label>
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" value="Avançar" id="avanco">
+                </div>
+            </fieldset>
+        
+        </form>
+    </main>
 </body>
 </html>
