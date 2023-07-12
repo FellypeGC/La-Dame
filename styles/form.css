@@ -11,7 +11,8 @@
     --cor-primaria-hover: #a8132a;
     --cor-letra-botao: #c2c2c2;
     --background-input: #F1F0FA;
-    --cor-background: #FFFFFF;
+    --cor-background: #F2F0F3;
+    --cor-background-fieldset: #FFFFFF;
 }
 
 html {
@@ -24,7 +25,7 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 20rem;
-    background-image: url(../imagens/Sutiã\ com\ Bojo.png);
+    background-color: var(--cor-background);
 }
 
 header {
@@ -68,6 +69,10 @@ a:hover {
     font-weight: 600;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
 
 h1 {
     display: flex;
@@ -93,11 +98,13 @@ form, fieldset {
     padding: 0.5rem;
 }
 
+
 fieldset {
+    display: flex;
     border: 1px solid rgba(117, 113, 113, 0.315);
     border-radius: 10px;
     box-shadow: 0px 2px 3px rgba(70, 67, 67, 0.178);
-    background-color: var(--cor-background);
+    background-color: var(--cor-background-fieldset);
 }
 
 img {
@@ -168,3 +175,4 @@ a {
     color: var(--cor-letra-botao);
     transition: 500ms linear;
 }
+
